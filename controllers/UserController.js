@@ -6,4 +6,8 @@ module.exports = class Controller {
       // ..
     }
   }
+
+  static async getMovies(req, res) {
+    // ...
+  }
 };
