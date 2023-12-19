@@ -3,6 +3,7 @@ module.exports = class Controller {
     try {
       // ..
       // ini comment
+      // ini fix comment
     } catch (error) {
       // ..
     }
