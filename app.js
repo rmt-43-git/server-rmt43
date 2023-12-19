@@ -1,4 +1,5 @@
 const express = require("express");
+const Controller = require("./controllers/UserController");
 const app = express();
 const port = 3000;
 
@@ -14,9 +15,9 @@ app.post("/register", async (req, res) => {
   }
 });
 
-app.get("/movies", async (req, res) => {
-  // ..
-});
+app.post("/login", Controller.login);
+
+app.get("/movies", Controller.getMovies);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
