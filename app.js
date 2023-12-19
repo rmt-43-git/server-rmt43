@@ -18,6 +18,9 @@ app.post("/register", async (req, res) => {
 app.post("/login", Controller.login);
 
 app.get("/movies", Controller.getMovies);
+app.post("/movies", (req, res) => {
+  // ..
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
